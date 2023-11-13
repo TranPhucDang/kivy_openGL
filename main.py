@@ -10,8 +10,8 @@ from kivy3 import Mesh, Material
 
 # Resources pathes
 _this_path = os.path.dirname(os.path.realpath(__file__))
-obj_file = os.path.join(_this_path, "MQ-27.obj")
-# obj_file = os.path.join(_this_path, "./namecard/card2.obj")
+# obj_file = os.path.join(_this_path, "demodata/MQ-27.obj")
+obj_file = os.path.join(_this_path, "NC/card2.obj")
 # obj_file = os.path.join(_this_path, "./data/monkey.obj")
 # stl_file = os.path.join(_this_path, "./data/untitled.stl")
 
@@ -68,8 +68,8 @@ class MainApp(App):
         self.renderer = Renderer()
         self.renderer.set_clear_color((.16, .30, .44, 1.))
         scene = Scene()
-        camera = PerspectiveCamera(30, 1, 100, 2500)
-        # camera = PerspectiveCamera(10, 1, 100, 2500)
+        # camera = PerspectiveCamera(30, 1, 100, 2500)
+        camera = PerspectiveCamera(5, 1, 100, 2500)
         loader = OBJLoader()
         obj = loader.load(obj_file)
         # material = Material(color=(0.3, 0., 0.3), diffuse=(0.3, 0.3, 0.3),
@@ -79,7 +79,8 @@ class MainApp(App):
         # obj = loader.load(stl_file,material)
         self.obj3d = obj
         self.camera = camera
-        root = ObjectTrackball(camera, 1500)
+        # root = ObjectTrackball(camera, 1500)
+        root = ObjectTrackball(camera, 150)
 
         scene.add(obj)
 

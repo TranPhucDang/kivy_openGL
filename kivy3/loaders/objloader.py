@@ -95,6 +95,7 @@ class WaveObject(object):
             geometry.faces.append(face3)
 
         # apply material for object
+        print(self.mtl_name)
         if self.mtl_name in self.loader.mtl_contents:
             raw_material = self.loader.mtl_contents[self.mtl_name]
             # shader ignores values

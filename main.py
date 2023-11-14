@@ -11,7 +11,7 @@ from kivy3 import Mesh, Material
 # Resources pathes
 _this_path = os.path.dirname(os.path.realpath(__file__))
 # obj_file = os.path.join(_this_path, "demodata/MQ-27.obj")
-obj_file = os.path.join(_this_path, "NC/card2.obj")
+obj_file = os.path.join(_this_path, "NC/card3.obj")
 # obj_file = os.path.join(_this_path, "./data/monkey.obj")
 # stl_file = os.path.join(_this_path, "./data/untitled.stl")
 

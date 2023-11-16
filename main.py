@@ -1,5 +1,8 @@
 
 import os
+import os
+os.environ["KCFG_KIVY_LOG_LEVEL"] = "debug"
+os.environ["KIVY_GL_DEBUG"] = "1"
 import math
 from kivy.app import App
 from kivy.clock import Clock

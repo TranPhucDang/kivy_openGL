@@ -4,14 +4,17 @@ import math
 from kivy.app import App
 from kivy.clock import Clock
 from kivy3 import Scene, Renderer, PerspectiveCamera
-from kivy3.loaders import OBJLoader, STLLoader
+from kivy3.loaders import OBJLoader, STLLoader, OBJMTLLoader
 from kivy.uix.floatlayout import FloatLayout
 from kivy3 import Mesh, Material
 
 # Resources pathes
 _this_path = os.path.dirname(os.path.realpath(__file__))
 # obj_file = os.path.join(_this_path, "demodata/MQ-27.obj")
-obj_file = os.path.join(_this_path, "NC/card3.obj")
+# obj_file = os.path.join(_this_path, "NC/card3.obj")
+obj_file = os.path.join(_this_path, "NC/card_32.obj")
+mtl_file = os.path.join(_this_path, "NC/card_32.mtl")
+shader_file = os.path.join(_this_path, "NC/simple.glsl")
 # obj_file = os.path.join(_this_path, "./data/monkey.obj")
 # stl_file = os.path.join(_this_path, "./data/untitled.stl")
 
@@ -65,13 +68,13 @@ class ObjectTrackball(FloatLayout):
 class MainApp(App):
 
     def build(self):
-        self.renderer = Renderer()
+        self.renderer = Renderer(shader_file=shader_file)
         self.renderer.set_clear_color((.16, .30, .44, 1.))
         scene = Scene()
         # camera = PerspectiveCamera(30, 1, 100, 2500)
-        camera = PerspectiveCamera(5, 1, 100, 2500)
-        loader = OBJLoader()
-        obj = loader.load(obj_file)
+        camera = PerspectiveCamera(3, 1, 100, 2500)
+        loader = OBJMTLLoader()
+        obj = loader.load(obj_file, mtl_file)
         # material = Material(color=(0.3, 0., 0.3), diffuse=(0.3, 0.3, 0.3),
         #                 specular=(0., 0., 0.))
 

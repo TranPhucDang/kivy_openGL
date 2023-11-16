@@ -7,7 +7,7 @@ from kivy3_dev import Mesh, Material
 from kivy3_dev import Scene, Renderer, PerspectiveCamera
 from kivy3_dev.widgets import OrbitControlWidget
 from kivy3_dev.extras.geometries import BoxGeometry, CylinderGeometry, SphereGeometry
-from kivy3_dev.loaders import OBJLoader, STLLoader
+from kivy3_dev.loaders import OBJLoader, STLLoader,OBJMTLLoader
 from kivy.uix.widget import Widget
 
 from kivy.graphics import Color, Rectangle
@@ -16,9 +16,9 @@ import math
 
 
 _this_path = os.path.dirname(os.path.realpath(__file__))
-shader_file = os.path.join(_this_path, "./data/blinnphong.glsl")
-obj_file = os.path.join(_this_path, "./data/monkey.obj")
-stl_file = os.path.join(_this_path, "./namecard/card2.stl")
+obj_file = os.path.join(_this_path, "NC/card33_1.obj")
+mtl_file = os.path.join(_this_path, "NC/card33_1.mtl")
+shader_file = os.path.join(_this_path, "NC/simple.glsl")
 
 
 class SceneApp(App):
@@ -36,8 +36,8 @@ class SceneApp(App):
             color=(0.3, 0.0, 0.3), diffuse=(0.3, 0.3, 0.3), specular=(0.1, 0.1, 0.1)
         )
 
-        loader = STLLoader()
-        obj = loader.load(stl_file, material)
+        loader = OBJMTLLoader()
+        obj = loader.load(obj_file, mtl_file)
         self.item = obj
         self.theta = 0.0
 

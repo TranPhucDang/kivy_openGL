@@ -1,0 +1,213 @@
+# Blender 3.6.5 MTL File: 'Namecard2_4.blend'
+# www.blender.org
+
+newmtl Material_BG
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+Pr 0.500000
+Pm 0.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
+map_Kd people.png
+
+newmtl Material_BG.001
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+Pr 0.500000
+Pm 0.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
+
+newmtl Material_MS
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+Pr 0.000000
+Pm 0.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.000000
+aniso 0.000000
+anisor 0.000000
+map_Kd gray_bg_5.png
+
+newmtl Material_black
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+Pr 0.500000
+Pm 0.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
+map_Kd stam.png
+
+newmtl Material_black02
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+Pr 0.000000
+Pm 0.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
+map_Kd people.png
+
+newmtl Material_black04
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+Pr 0.000000
+Pm 0.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.000000
+aniso 0.000000
+anisor 0.000000
+map_Kd gray_bg_5.png
+
+newmtl Material_people.001
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+Pr 0.000000
+Pm 0.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.000000
+aniso 0.000000
+anisor 0.000000
+map_Kd people.png
+
+newmtl Material_text1.001
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 8.250000
+d 1.000000
+illum 2
+Pr 0.000000
+Pm 0.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.231970
+aniso 0.000000
+anisor 0.000000
+map_Kd nearblack.png
+
+newmtl Material_white
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+Pr 0.500000
+Pm 0.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
+map_Kd nearwhite.png
+
+newmtl Material_white.001
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+Pr 0.500000
+Pm 0.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
+map_Kd nearwhite.png
+
+newmtl Material_yellow
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+Pr 0.000000
+Pm 0.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
+map_Kd nearyellow.png
+
+newmtl den
+Kd 0.000000 0.000000 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+Pr 0.000000
+Pm 0.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
+
+newmtl stam
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+Pr 0.500000
+Pm 0.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
+map_Kd stam.png
+map_Bump -bm 1.000000 normal_stam.png
+
+newmtl white
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+Pr 0.500000
+Pm 0.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
+map_Kd stam.png

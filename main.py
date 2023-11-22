@@ -1,7 +1,7 @@
 
 import os
-os.environ["KCFG_KIVY_LOG_LEVEL"] = "debug"
-os.environ["KIVY_GL_DEBUG"] = "1"
+# os.environ["KCFG_KIVY_LOG_LEVEL"] = "debug"
+# os.environ["KIVY_GL_DEBUG"] = "1"
 import math
 from kivy.app import App
 from kivy.clock import Clock
@@ -14,9 +14,9 @@ from kivy3 import Mesh, Material
 _this_path = os.path.dirname(os.path.realpath(__file__))
 # obj_file = os.path.join(_this_path, "demodata/MQ-27.obj")
 # obj_file = os.path.join(_this_path, "NC/card3.obj")
-obj_file = os.path.join(_this_path, "NC/card33_1.obj")
-mtl_file = os.path.join(_this_path, "NC/card33_1.mtl")
-shader_file = os.path.join(_this_path, "NC/simple.glsl")
+obj_file = os.path.join(_this_path, "shading/card2_4.obj")
+mtl_file = os.path.join(_this_path, "shading/card2_4.mtl")
+shader_file = os.path.join(_this_path, "NC/simple2.glsl")
 # obj_file = os.path.join(_this_path, "./data/monkey.obj")
 # stl_file = os.path.join(_this_path, "./data/untitled.stl")
 

@@ -108,6 +108,7 @@ class WaveObject(object):
                     # TODO: map file path may contains spaces.
                     #      current implementation fails.
                     map_path = join(mtl_dirname, v[0])
+                    print(map_path)
                     if not exists(map_path):
                         msg = u'WaveObject: Texture not found <{}>'
                         Logger.warning(msg.format(map_path))

@@ -16,9 +16,9 @@ import math
 
 
 _this_path = os.path.dirname(os.path.realpath(__file__))
-obj_file = os.path.join(_this_path, "NC/card33_1.obj")
-mtl_file = os.path.join(_this_path, "NC/card33_1.mtl")
-shader_file = os.path.join(_this_path, "NC/simple.glsl")
+obj_file = os.path.join(_this_path, "shading/card2_4.obj")
+mtl_file = os.path.join(_this_path, "shading/card2_4.mtl")
+shader_file = os.path.join(_this_path, "NC/simple2.glsl")
 
 
 class SceneApp(App):
